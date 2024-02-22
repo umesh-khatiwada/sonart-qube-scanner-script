@@ -1,0 +1,1 @@
+# sonart-qube-scanner-script

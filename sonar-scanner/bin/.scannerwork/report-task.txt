@@ -1,0 +1,6 @@
+projectKey=taronomaki_taronomaki-app_AY2wn27UP3M-Hn_Nc510
+serverUrl=http://localhost:9000
+serverVersion=9.9.4.87374
+dashboardUrl=http://localhost:9000/dashboard?id=taronomaki_taronomaki-app_AY2wn27UP3M-Hn_Nc510
+ceTaskId=AY2wpkL-P3M-Hn_Nc52P
+ceTaskUrl=http://localhost:9000/api/ce/task?id=AY2wpkL-P3M-Hn_Nc52P
