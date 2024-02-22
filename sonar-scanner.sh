@@ -37,4 +37,4 @@ if [[ -z $projectBaseDir || -z $hostUrl || -z $login || -z $password || -z $proj
 fi
 
 # Run sonar-scanner command
-/Users/umeshkhatiwada/Umesh/Company/BerryBytes/project/sonarQube/sonar-scanner/bin/sonar-scanner -Dsonar.projectBaseDir="$projectBaseDir" -Dsonar.host.url="$hostUrl" -Dsonar.login="$login" -Dsonar.password="$password" -Dsonar.projectKey="$projectKey" -Dsonar.projectName="$projectName"
+./sonar-scanner/bin/sonar-scanner -Dsonar.projectBaseDir="$projectBaseDir" -Dsonar.host.url="$hostUrl" -Dsonar.login="$login" -Dsonar.password="$password" -Dsonar.projectKey="$projectKey" -Dsonar.projectName="$projectName"
