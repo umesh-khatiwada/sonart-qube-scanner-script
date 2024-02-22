@@ -38,3 +38,9 @@ fi
 
 # Run sonar-scanner command
 ./sonar-scanner/bin/sonar-scanner -Dsonar.projectBaseDir="$projectBaseDir" -Dsonar.host.url="$hostUrl" -Dsonar.login="$login" -Dsonar.password="$password" -Dsonar.projectKey="$projectKey" -Dsonar.projectName="$projectName"
+
+echo "Sleeping for 15 seconds..."
+sleep 15
+echo "Awake after 15 seconds!"
+
+ curl -u $login:$password -X GET "$hostUrl/api/issues/search?componentKeys=my_project_key&ps=100&s=FILE_LINE&additionalFields=_all&statuses=OPEN,REOPENED,CLOSED"
