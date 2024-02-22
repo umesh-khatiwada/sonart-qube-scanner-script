@@ -19,6 +19,9 @@ while [[ $# -gt 0 ]]; do
     -Dsonar.projectKey=*)
       projectKey="${1#*=}"
       ;;
+    -Dsonar.projectRepository=*)
+      projectRepository="${1#*=}"
+      ;;
     -Dsonar.projectName=*)
       projectName="${1#*=}"
       ;;
@@ -29,6 +32,14 @@ while [[ $# -gt 0 ]]; do
   esac
   shift
 done
+
+#check projectRepository isnot empty
+if [[ -z $projectRepository ]]; then
+  git clone $projectRepository vuln-check
+  projectBaseDir="vuln-check"
+fi
+
+
 
 # Validate required parameters
 if [[ -z $projectBaseDir || -z $hostUrl || -z $login || -z $password || -z $projectKey || -z $projectName ]]; then
