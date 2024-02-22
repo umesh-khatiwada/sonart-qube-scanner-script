@@ -43,4 +43,4 @@ echo "Sleeping for 15 seconds..."
 sleep 15
 echo "Awake after 15 seconds!"
 
- curl -u $login:$password -X GET "$hostUrl/api/issues/search?componentKeys=my_project_key&ps=100&s=FILE_LINE&additionalFields=_all&statuses=OPEN,REOPENED,CLOSED"
+ curl -u $login:$password -X GET "$hostUrl/api/issues/search?componentKeys=$projectKey&ps=100&s=FILE_LINE&additionalFields=_all&statuses=OPEN,REOPENED,CLOSED"
